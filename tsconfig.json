@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "outDir": "dist",
+        "sourceMap": true,
+        "target": "es2020",
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "allowJs": true
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "**/*.spec.ts"]
+}
