@@ -10,6 +10,7 @@ process.env.NODE_ENV = process.env.NODE_ENV || "development";
 export default {
     cron: {
         frequency: process.env.CRON_FREQUENCY,
+        frequencyMS: process.env.CRON_FREQUENCY_MILISECONDS,
     },
     google: {
         client: {
@@ -18,7 +19,7 @@ export default {
         },
         redirectURI: process.env.GOOGLE_REDIRECT_URI,
         refreshToken: process.env.GOOGLE_REFRESH_TOKEN,
-        targetFolderID: process.env.GOOGLE_TARGET_FOLDER_ID,
+        driveFolderName: process.env.GOOGLE_DRIVE_FOLDER_NAME,
     },
     dirs: {
         origin: process.env.ORIGIN_DIR,
