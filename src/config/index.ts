@@ -1,9 +1,17 @@
 import { config } from "dotenv";
+
+import yargs from "yargs";
+import { hideBin } from "yargs/helpers";
+
 const envFound = config();
+const argv = yargs(hideBin(process.argv)).argv;
 
 if (!envFound) {
     throw new Error("The .env file could not be found.");
 }
+
+// if (process.env.EXTRACTION_DIR.split('/'))
+// Object.keys(argv)
 
 process.env.NODE_ENV = process.env.NODE_ENV || "development";
 

@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import config from "./config";
 import { initCron } from "./scheduler";
 
